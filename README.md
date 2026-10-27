@@ -133,9 +133,3 @@ php artisan test
 
 Mencakup autentikasi, isolasi data antar user, CRUD transaksi, kategori, dompet, budget (termasuk duplikasi), goal & setoran, serta export CSV & PDF.
 
-## Ide Pengembangan Lanjutan
-
-- Transfer antar dompet (double-entry) dan transaksi berulang otomatis.
-- Notifikasi email/WhatsApp saat budget hampir habis.
-- Import mutasi bank (CSV/OFX) dan OCR struk.
-- Mode gelap dan dukungan multi-mata uang.
