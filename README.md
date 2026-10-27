@@ -2,15 +2,6 @@
 
 Aplikasi web berbasis **Laravel 13** untuk mencatat pemasukan dan pengeluaran harian, memantau saldo bulanan, mengatur budget per kategori, dan mengejar target tabungan. Dibuat untuk memenuhi tugas mata kuliah **Web Programming D**.
 
-## Ringkasan Kebutuhan Tugas
-
-| Kebutuhan | Status |
-| --- | --- |
-| CRUD dengan framework Laravel (MVC) | ✅ Model, View (Blade), Controller terpisah |
-| Minimal 8 fitur di luar autentikasi | ✅ 11 fitur (lihat daftar di bawah) |
-| Login, registrasi, logout | ✅ Autentikasi session bawaan Laravel |
-| Minimal 1 foreign key pada skema database | ✅ 8 foreign key pada 5 tabel |
-
 ## Fitur
 
 1. **Dashboard keuangan** — total saldo seluruh dompet, pemasukan/pengeluaran bulan berjalan, selisih, rata-rata pengeluaran harian.
