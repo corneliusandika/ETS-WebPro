@@ -26,3 +26,9 @@ Thumbs.db
 # Local database & generated font cache
 /database/*.sqlite
 /storage/fonts
+
+# Laporan ETS berisi data pribadi; simpan terpisah dari repo publik
+/docs/Laporan-*.docx
+
+# Kredensial publish profile Azure
+*.publishsettings

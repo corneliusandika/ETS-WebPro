@@ -1,6 +1,6 @@
 # Dompetku — Aplikasi Pelacak Keuangan Pribadi
 
-Aplikasi web berbasis **Laravel 13** untuk mencatat pemasukan dan pengeluaran harian, memantau saldo bulanan, mengatur budget per kategori, dan mengejar target tabungan. Dibuat untuk memenuhi tugas mata kuliah **PBKK** (Pemrograman Berbasis Kerangka Kerja).
+Aplikasi web berbasis **Laravel 13** untuk mencatat pemasukan dan pengeluaran harian, memantau saldo bulanan, mengatur budget per kategori, dan mengejar target tabungan. Dibuat untuk memenuhi tugas mata kuliah **Web Programming D**.
 
 ## Ringkasan Kebutuhan Tugas
 
@@ -9,7 +9,7 @@ Aplikasi web berbasis **Laravel 13** untuk mencatat pemasukan dan pengeluaran ha
 | CRUD dengan framework Laravel (MVC) | ✅ Model, View (Blade), Controller terpisah |
 | Minimal 8 fitur di luar autentikasi | ✅ 11 fitur (lihat daftar di bawah) |
 | Login, registrasi, logout | ✅ Autentikasi session bawaan Laravel |
-| Minimal 1 foreign key pada skema database | ✅ 12 foreign key pada 5 tabel |
+| Minimal 1 foreign key pada skema database | ✅ 8 foreign key pada 5 tabel |
 
 ## Fitur
 
@@ -58,7 +58,7 @@ users ─┬─< categories ─┬─< transactions >── wallets
 | `budgets` | `user_id`, `category_id` | Unik per (`user_id`, `category_id`, `month`) |
 | `goals` | `user_id → users.id` | Target tabungan |
 
-Seluruh foreign key memakai `cascadeOnDelete` agar data turunan ikut terhapus saat user dihapus.
+Sebagian besar foreign key memakai `cascadeOnDelete` agar data turunan ikut terhapus saat user dihapus. Pengecualiannya adalah `transactions.category_id`, yang memakai `nullOnDelete` agar transaksi tetap tersimpan ketika kategori dihapus.
 
 ## Teknologi
 
