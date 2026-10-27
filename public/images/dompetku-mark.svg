@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="14 6 204 210" fill="none">
+    <defs>
+        <linearGradient id="dompetku-body" x1="52" y1="80" x2="196" y2="184" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3B7BE8"/>
+            <stop offset="1" stop-color="#1B4FA8"/>
+        </linearGradient>
+        <linearGradient id="dompetku-flap" x1="70" y1="42" x2="180" y2="104" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#5BE7F2"/>
+            <stop offset="1" stop-color="#22C3DE"/>
+        </linearGradient>
+        <linearGradient id="dompetku-slot" x1="158" y1="106" x2="212" y2="148" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3B7BE8"/>
+            <stop offset="1" stop-color="#1B4FA8"/>
+        </linearGradient>
+        <linearGradient id="dompetku-shade" x1="38" y1="120" x2="96" y2="120" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#123C7A" stop-opacity="0.8"/>
+            <stop offset="1" stop-color="#123C7A" stop-opacity="0"/>
+        </linearGradient>
+        <clipPath id="dompetku-body-clip">
+            <rect x="38" y="76" width="160" height="112" rx="22"/>
+        </clipPath>
+    </defs>
+
+    <path d="M34 104c0-40 29-73 68-79" stroke="#35D6E8" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M206 152c-9 33-38 57-73 59" stroke="#2F6FE0" stroke-width="6.5" stroke-linecap="round"/>
+
+    <rect x="64" y="16" width="19" height="19" rx="4.5" fill="#2F6FE0" transform="rotate(-18 73.5 25.5)"/>
+    <rect x="172" y="30" width="14" height="14" rx="3.5" fill="#35D6E8" transform="rotate(14 179 37)"/>
+    <rect x="200" y="116" width="12" height="12" rx="3" fill="#2F6FE0" transform="rotate(20 206 122)"/>
+    <rect x="30" y="132" width="10" height="10" rx="2.5" fill="#35D6E8" transform="rotate(-12 35 137)"/>
+    <rect x="174" y="198" width="12" height="12" rx="3" fill="#35D6E8" transform="rotate(14 180 204)"/>
+
+    <rect x="22" y="148" width="27" height="7" rx="3.5" fill="#2F6FE0" transform="rotate(-9 35.5 151.5)"/>
+    <rect x="30" y="162" width="16" height="7" rx="3.5" fill="#8FD8F2" transform="rotate(-9 38 165.5)"/>
+    <circle cx="56" cy="167" r="4" fill="#35D6E8"/>
+
+    <g transform="rotate(-10 120 120)">
+        <rect x="44" y="42" width="152" height="66" rx="20" fill="url(#dompetku-flap)"/>
+        <rect x="54" y="66" width="132" height="10" rx="5" fill="#0B2E59"/>
+
+        <rect x="38" y="76" width="160" height="112" rx="22" fill="url(#dompetku-body)"/>
+        <rect x="38" y="76" width="54" height="112" fill="url(#dompetku-shade)" clip-path="url(#dompetku-body-clip)"/>
+
+        <rect x="158" y="106" width="54" height="42" rx="15" fill="url(#dompetku-slot)" stroke="#FFFFFF" stroke-width="5"/>
+    </g>
+</svg>
